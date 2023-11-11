@@ -1,0 +1,488 @@
+.container { /* basic container I've chosen */
+  margin-left: auto;
+  margin-right: auto;
+	padding: 0 10px;
+}
+header{
+	position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+li{
+	list-style: none;
+}
+.nav-item{
+	color: #333333;
+}
+.nav-link {
+	position: relative;
+	color: #333333;
+}
+/* navigation link underline & animation*/
+.nav-link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%; /* makes sure underline starts in the middle and expands outwards */
+	width: 0;
+	height: 1px;
+	background-color: #333333;
+	transition: 0.3s ease;
+	transform: translateX(-50%);
+}
+.nav-link:hover::before {
+	width: 100%;
+	left: 1;
+}
+.navbar{
+	min-height: 70px; /* sets a min height for my nav bar */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	transition: 0.3s ease;
+}
+.nav-menu {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	position: fixed;
+	top: -100%; /* hides my navbar in order to make my hamburger menu work */
+	left: 0;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	transition: top 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+	background-color: white;
+}
+.hamburger{
+	cursor: pointer;
+	display: block;
+}
+/* All .active and .activeScroll classes are to use with my javascript script */
+.nav-menu.active{
+	top: 0;
+	margin-top: 0;
+}
+.hamburger.active .bar:nth-child(2){
+	opacity: 0;
+}
+/* hamburger bars animations */
+.hamburger.active .bar:nth-child(1){
+	transform: translateY(8px) rotate(45deg);
+	background-color: #333333;
+}
+.hamburger.active .bar:nth-child(3){
+	transform: translateY(-8px) rotate(-45deg);
+	background-color: #333333;
+}
+.spark-logo-nav.active{
+	color: #333333;
+}
+.hamburger.activeScroll .bar{ /* to change color of bars as page scrolls */
+	background-color: #333333;
+}
+.nav-item{
+	margin: 16px 0;
+}
+.banner{
+	display: flex;
+	flex-direction: column-reverse;
+	height: 99vh;
+}
+.spark-logo-nav{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	letter-spacing: -.1rem;
+	color: white;
+}
+.banner-text h1{
+	font-weight: bold;
+}
+.banner-text{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(../images/square/darker.jpg); /* used to get the look I was going for */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	flex-direction: column;
+	
+}
+.banner-text h1, .banner-text span{
+	color: white;
+	font-size: 3rem;
+	letter-spacing: -.2rem;
+	line-height: 2.5rem;
+	margin-top: auto;
+}
+.banner-text p {
+	color: white;
+	font-size: .7rem;
+	margin-top: auto;
+	padding-bottom: 2rem;
+}
+.banner-img {
+	display: none;
+}
+.banner-img img, .banner-img picture {
+	width: 100%; /* Helps maintain the same width*/
+	height: 100%;
+	object-fit: cover; /* makes sure my image keeps its ratio as well */
+	filter: brightness(80%); /* Changes the darkness level */
+}
+.banner-text span{
+	font-weight: 400;
+	display: block;
+}
+.scroll-down{
+	margin-bottom: 2rem;
+}
+.about-bold{
+	font-weight: bold;
+	letter-spacing: -.1rem;
+}
+.us-unBold{
+	padding-left: .5rem;
+}
+.about {
+	text-align: center;
+}
+.line-comb {
+	position: relative;
+	padding-top: 1.5rem;
+}
+/* about us lines styles */
+.line-comb::before,
+.line-comb::after {
+	content: '';
+	position: absolute;
+	height: .5px; /* Set the height of the lines */
+	width: 35%; /* Set the width of the lines */
+	background-color: black; /* Set the color of the lines */
+	top: 50%;
+	transform: translateY(-50%);
+}
+.line-comb::before {
+	left: -10px; 
+}
+.line-comb::after {
+	right: -10px; 
+}
+.line-comb img {
+	width: 20%;
+}
+/* recognitions section */
+.recognitions{
+	display: flex;
+	padding: 2rem 0;
+}
+.recognition{
+	flex: 1;
+	text-align: center;
+}
+.recognition p{
+	font-size: .7rem;
+	margin: 0;
+}
+.rec-digit{
+	font-weight: bold;;
+} /* ends recognitions section */
+/* GRID image stacks (used grid to be able to offset image on top of others like in my design*/
+.image-stack-1-a{
+	display: none;
+}
+.image-stack-2-a{
+	display: none;
+}
+.image-stack-3-a{
+	display: none;
+}
+.image-stack-1-b {
+	grid-column: 1 / 9;
+	grid-row: 1;
+	padding-top: 10%; 
+	z-index: 1;
+}
+.image-stack-2-b {
+	grid-column: 1 / 9;
+	grid-row: 3;
+	padding-top: 10%; 
+	z-index: 1;
+}
+.image-stack-3-b {
+	grid-column: 1 / 9;
+	grid-row: 5;
+	padding-top: 10%; 
+	z-index: 1;
+}
+.squareImage img{
+	width: 100%;
+}
+.image-stack {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(6, auto);
+	position: relative;
+}
+.the-cut-text{
+	grid-column: 1/9;
+	grid-row: 2;
+	text-align: center;
+	align-self: center;
+}
+.the-shop-text{
+	grid-column: 1/9;
+	grid-row: 4;
+	text-align: center;
+	align-self: center;
+}
+.our-expertise-text{
+	grid-column: 1/9;
+	grid-row: 6;
+	text-align: center;
+	align-self: center;
+}
+.grid-bold{
+	font-weight: bold;
+	letter-spacing: -.1rem;
+	padding-left: .5rem;
+}
+footer{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	margin: 10rem 0 2rem 0;
+	align-items: center;
+	gap: 1rem;
+}
+.footer-tpc{
+	display: flex;
+	gap: 1rem;
+}
+/* fade-in animation for banner paragraph */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease-in-out forwards;
+}
+@keyframes fadeInAnimation { /* animation for banner paragraph, opacity. */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 576px) {
+  /* Styles for screens with a minimum width of 576 pixels */
+	.banner-text h1, .banner-text span{
+		letter-spacing: -.5rem;
+		line-height: 4rem;
+		font-size: 4.5rem;
+	}
+	.banner-text p {
+		font-size: .95rem;
+		
+	}
+	.recognition p{
+		font-size: 0.8rem;
+	}
+	.line-comb img {
+		width: 15%;
+	}
+}
+@media screen and (min-width: 768px) {
+  /* Styles for screens with a minimum width of 768 pixels */
+	.spark-logo-nav{
+		font-size: 2rem;
+	}
+	.recognition p{
+		font-size: 0.9rem;
+	}
+	.line-comb img {
+		width: 10%;
+	}
+	.about{
+		padding: 5rem 5rem;
+	}
+	.image-stack{
+		align-items: center;
+		row-gap: 5rem;
+	}
+	.image-stack-1-b {
+		grid-column: 2 / 5;
+		grid-row: 1;
+		padding-top: 10%; 
+		z-index: 1;
+	}
+	.image-stack-1-b img{
+		width: 70%;
+		border: 10px solid white;
+		rotate: 5deg;
+	}
+	.image-stack-1-a img{
+		width: 25%;
+	}
+	.image-stack-1-a {
+    grid-column: 1 / -1;
+    grid-row: 1;
+		display: block;
+  }
+	.image-stack-2-a img{
+		width: 100%;
+	}
+	.image-stack-2-a {
+    grid-column: 7 / 9;
+    grid-row: 2;
+		display: block;
+  }
+	.the-cut-text{
+		grid-column: 5/9;
+		grid-row: 1;
+		text-align: start;
+	}
+	.image-stack-2-b {
+		grid-column: 6/8;
+		grid-row: 2;
+		padding-top: 10%; 
+		z-index: 1;
+	}
+	.image-stack-2-b img{
+		width: 100%;
+		border: 10px solid white;
+		rotate: -5deg;
+	}
+	.the-shop-text{
+		grid-column: 1/5;
+		grid-row: 2;
+		text-align: end;
+	}
+	.our-expertise-text{
+		grid-column: 5/9;
+		grid-row: 3;
+		text-align: start;
+	}
+	.image-stack-3-b {
+		grid-column: 2 / 5;
+		grid-row: 3;
+		padding-top: 10%; 
+		z-index: 1;
+	}
+	.image-stack-3-b img{
+		width: 70%;
+		border: 10px solid white;
+		rotate: 5deg;
+	}
+	.image-stack-3-a img{
+		width: 25%;
+	}
+	.image-stack-3-a {
+    grid-column: 1 / -1;
+    grid-row: 3;
+		display: block;
+  }
+	footer{
+		margin: 2rem 0;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+  /* Styles for screens with a minimum width of 1300 pixels */
+	.container {
+		max-width: 1800px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 200px;
+	}
+	.banner{
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+	}
+	.spark-logo-nav{
+		color: #333333;
+	}
+	.banner-text h1{
+		font-weight: bold;
+		letter-spacing: -.5rem;
+		line-height: 4rem;
+	}
+	.banner-img img{
+		position: static;
+	}
+	.banner-img {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.banner-text{
+		background: none;
+	}
+	.banner-text h1, .banner-text span{
+		color: #333333;
+	}
+	.banner-text p{
+		color: #333333;
+		font-size: .9rem;
+	}
+	.hamburger{
+		display: none;
+	}
+	.navbar{
+		width: 100%;
+		justify-content: space-between;
+	}
+	.nav-menu {
+		display: flex;
+		gap: 30px;
+		flex-direction: row;
+		padding: 0;
+		position: static;
+		top: 0;
+		margin: 0;
+		text-align: center;
+		transition: top 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+		width: auto;
+		padding-right: 50px;
+		background: none;
+	}
+	.nav-link{
+		color: white;
+	}
+	.nav-link.active{
+		color: #333333;
+	}
+	.nav-link::before{
+		background-color: white;
+	}
+	.nav-link.before::before{
+		background-color: #333333;
+	}
+	.recognition p{
+		font-size: 1rem;
+	}
+	.line-comb img {
+		width: 8%;
+	}
+	.about{
+		padding: 15rem 20rem;
+	}
+}
+

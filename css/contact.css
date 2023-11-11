@@ -1,0 +1,73 @@
+
+.form-container{
+	display: flex;
+	flex-direction: column;
+	margin-top: 8rem;
+}
+.form-container h1{
+	font-size: 2rem;
+}
+.contact-bold{ /* changes contact word to bold */
+	font-weight: bold;
+} 
+.contact-light{ /* necessary since I am using a font with a very tight letter space */
+	padding-left: .5rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+button {
+  display: block;
+  margin-top: 20px; /* adds a little space between the main form */
+  padding: 10px;
+  background-color: #ffffff; 
+  color: #333333; 
+  border: solid 1px #333333;
+  cursor: pointer;
+	transition: 0.3s ease; /* to smooth hover animation */
+}
+.form-container{
+	display: flex;
+	flex: 1;
+}
+.form-image img{
+	display: none;
+}
+form label {
+	display: none;
+} /* my design does not show the label but is still accessible, it's just invisible */
+form{
+	display: grid;
+	gap: 1rem;
+}
+button:hover{
+	background: #333333;
+	color: white;
+
+}
+@media screen and (min-width: 1300px) {
+	/* style changes for screens with at least 1300px */
+	.form-image img{
+		display: block;
+		width: 100%;
+	}
+	.form-image-container{
+		flex: 1;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		align-items: center;
+	}
+	form{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+		grid-column: 2/4;
+	}
+	.form-container h1{
+		font-size: 3rem;
+	}
+}

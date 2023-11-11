@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/8097ac3239.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!--css reset-->
+	<link rel="stylesheet" href="css/fonts.css"> <!--font styles-->
+	<link rel="stylesheet" href="css/main.css"> <!--my main css file-->
+	<script src="javascript/script.js"></script> <!--my javascript for more basic scroll animations and adding and removing classes-->
+	<title>SPARK Barbershop - Home</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--for scroll animation-->
+</head>
+<body>
+	<header role="banner">
+		<nav class="navbar" role="navigation" aria-label="Main Navigation"> 
+			<a href="index.html" class="spark-logo-nav">SPARK</a> <!-- "SPARK" Logo at the top left on the navbar -->
+	
+			<ul class="nav-menu" role="menubar"> 
+				<li class="nav-item" role="menuitem">
+					<a href="index.html" class="nav-link fa-fade" role="link">HOME</a> <!-- "fa-fade is used from FontAweasome library in order to animate" -->
+				</li>
+				<li class="nav-item" role="menuitem">
+					<a href="services.html" class="nav-link" role="link">SERVICES</a>
+				</li>
+				<li class="nav-item" role="menuitem">
+					<a href="contact.html" class="nav-link" role="link">CONTACT</a>
+				</li>
+			</ul> <!-- closes nav menu -->
+	
+			<div class="hamburger" role="button" aria-label="Toggle Navigation Menu">
+				<span class="bar"></span>
+				<span class="bar"></span> <!-- creates 3 lines to build the hamburger icon so I can later animate it -->
+				<span class="bar"></span>
+			</div> <!-- closes hamburger -->
+		</nav> <!-- closes navbar -->
+	</header>
+	<main role="main">
+		<div class="banner" role="banner">
+			<div class="banner-text">
+				<h1>SPARK<span>BARBERSHOP</span></h1>
+				<p class="fade-in">WHERE STYLE IGNITES CONFIDENCE</p>
+				<i class="scroll-down fa-solid fa-sharp fa-light fa-angle-down fa-beat-fade fa-lg" style="color: #ffffff;"></i>
+			</div>
+			<div class="banner-img"> <!-- banner starts -->
+				<picture>
+					<!-- Image optimization code -->
+					<img src="images/square/banner_default.jpg" alt="close up of barber cutting hair used for main banner image"> <!-- backup image -->
+				</picture> <!-- closes image optimization -->
+			</div>
+		</div> <!-- closes banner -->
+		<section class="about container" role="region" aria-label="About Section"> <!-- starts about section -->
+			<h2><span class="about-bold">ABOUT</span><span class="us-unBold">US</span></h2> <!-- spans used to later modify each word -->
+			<div class="line-comb">
+				<img src="/images/icons/comb.png" alt="scissors & comb icon">
+			</div> <!-- closes divider -->
+			<p>Welcome to SPARK Barbershop, where expertise meets style. Our skilled barbers are dedicated to delivering precision cuts and
+				personalized grooming experiences. With a blend of tradition and creativity, we transform haircuts into confidence.
+				Discover the art of grooming at SPARK, where every cut sparks a new sense of confidence.</p>
+			<div class="recognitions" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="800" aria-label="Recognition Section"> <!-- starts recognition section -->
+				<div class="awards recognition">
+					<p class="rec-digit">15</p>
+					<p>AWARDS</p>
+				</div>
+				<div class="customers recognition">
+					<p class="rec-digit">1500+</p>
+					<p>HAPPY CUSTOMERS</p>
+				</div>
+				<div class="nominations recognition">
+					<p class="rec-digit">24</p>
+					<p>NOMINATIONS</p>
+				</div>
+			</div> <!-- ends recognition section -->
+		</section>
+		<div class="image-stack container"> <!--starts "GRID for "The cut, The Shop, Our Expertise" section-->
+      <div class="image-stack-1-b squareImage" > <!--starts the cut section (square image)-->
+				<picture>
+					<source srcset="
+					images/square/grid-overlap-1-b-320_x_320.jpg,
+					images/square/grid-overlap-1-b-480_x_480.jpg,
+					images/square/grid-overlap-1-b-720_x_720.jpg,
+					images/square/grid-overlap-1-b-960_x_960.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/square/grid-overlap-1-b-640_x_640.jpg,
+					images/square/grid-overlap-1-b-960_x_960.jpg
+					images/square/grid-overlap-1-b-1440_x_1440.jpg,
+					images/square/grid-overlap-1-b-1920_x_1920.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/square/grid-overlap-1-b-960_x_960.jpg,
+					images/square/grid-overlap-1-b-1440_x_1440.jpg,
+					images/square/grid-overlap-1-b-2160_x_2160.jpg,
+					images/square/grid-overlap-1-b-2880_x_2880.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/square/grid-overlap-1-b-800_x_800.jpg,
+      		images/square/grid-overlap-1-b-640_x_640.jpg,
+      		images/square/grid-overlap-1-b-480_x_480.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/square/grid-overlap-1-b-1600_x_1600.jpg,
+      		images/square/grid-overlap-1-b-1280_x_1280.jpg,
+      		images/square/grid-overlap-1-b-960_x_960.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/square/grid-overlap-1-b-2400_x_2400.jpg,
+					images/square/grid-overlap-1-b-1920_x_1920.jpg,
+					images/square/grid-overlap-1-b-1440_x_1440.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/square/grid-overlap-3-b.jpg" alt="Square close-up image of barber clipping hair">
+				</picture>
+      </div>
+      <div class="image-stack-1-a"> <!--the cut section (long image)-->
+				<picture>
+					<source srcset="
+					images/9:16/grid-overlap-1-a-320_x_569.jpg,
+					images/9:16/grid-overlap-1-a-480_x_854.jpg,
+					images/9:16/grid-overlap-1-a-720_x_1280.jpg,
+					images/9:16/grid-overlap-1-a-960_x_1706.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/9:16/grid-overlap-1-a-640_x_1138.jpg,
+					images/9:16/grid-overlap-1-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-1-a-1440_x_2560.jpg,
+					images/9:16/grid-overlap-1-a-1920_x_3413.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/9:16/grid-overlap-1-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-1-a-1440_x_2560.jpg,
+					images/9:16/grid-overlap-1-a-2160_x_3840.jpg,
+					images/9:16/grid-overlap-1-a-2880_x_5120.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/9:16/grid-overlap-1-a-800_x_1422.jpg,
+      		images/9:16/grid-overlap-1-a-640_x_1138.jpg,
+      		images/9:16/grid-overlap-1-a-480_x_854.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/9:16/grid-overlap-1-a-1600_x_2844.jpg,
+      		images/9:16/grid-overlap-1-a-1280_x_2275.jpg,
+      		images/9:16/grid-overlap-1-a-960_x_960.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/9:16/grid-overlap-1-a-2400_x_4266.jpg,
+					images/9:16/grid-overlap-1-a-1920_x_3413.jpg,
+					images/9:16/grid-overlap-1-a-1440_x_2560.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/9:16/grid-overlap-1-a.jpg" alt="tall image of barber combing hair">
+				</picture>
+      </div>
+			<div class="the-cut-text" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="800">
+				<h3><span class="grid-the">THE</span><span class="grid-bold">CUT</span></h3c>
+				<p>At SPARK Barbershop, our cuts are more than hair transformations; they’re personalized
+					expressions of style and confidence. From classic gentlemen’s styles to modern fades, 
+					our skilled barbers blend tradition with the latest trends, ensuring each
+					cut reflects your individuality with precision and flair.</p>
+				</div>
+			<!-- "The Shop" Section -->
+      <div class="image-stack-2-b squareImage" >
+				<picture>
+					<source srcset="
+					images/square/grid-overlap-2-b-320_x_320.jpg,
+					images/square/grid-overlap-2-b-480_x_480.jpg,
+					images/square/grid-overlap-2-b-720_x_720.jpg,
+					images/square/grid-overlap-2-b-960_x_960.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/square/grid-overlap-2-b-640_x_640.jpg,
+					images/square/grid-overlap-2-b-960_x_960.jpg
+					images/square/grid-overlap-2-b-1440_x_1440.jpg,
+					images/square/grid-overlap-2-b-1920_x_1920.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/square/grid-overlap-2-b-960_x_960.jpg,
+					images/square/grid-overlap-2-b-1440_x_1440.jpg,
+					images/square/grid-overlap-2-b-2160_x_2160.jpg,
+					images/square/grid-overlap-2-b-2880_x_2880.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/square/grid-overlap-2-b-800_x_800.jpg,
+      		images/square/grid-overlap-2-b-640_x_640.jpg,
+      		images/square/grid-overlap-2-b-480_x_480.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/square/grid-overlap-2-b-1600_x_1600.jpg,
+      		images/square/grid-overlap-2-b-1280_x_1280.jpg,
+      		images/square/grid-overlap-2-b-960_x_960.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/square/grid-overlap-2-b-2400_x_2400.jpg,
+					images/square/grid-overlap-2-b-1920_x_1920.jpg,
+					images/square/grid-overlap-2-b-1440_x_1440.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/square/grid-overlap-2-b.jpg" alt="Square image of barber combing hair">
+				</picture>
+      </div>
+      <div class="image-stack-2-a longImage">
+				<picture>
+					<source srcset="
+					images/9:16/grid-overlap-2-a-320_x_568.jpg,
+					images/9:16/grid-overlap-2-a-480_x_853.jpg,
+					images/9:16/grid-overlap-2-a-720_x_1279.jpg,
+					images/9:16/grid-overlap-2-a-960_x_1706.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/9:16/grid-overlap-2-a-640_x_1137.jpg,
+					images/9:16/grid-overlap-2-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-2-a-1440_x_2559.jpg,
+					images/9:16/grid-overlap-2-a-1920_x_3412.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/9:16/grid-overlap-2-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-2-a-1440_x_2559.jpg,
+					images/9:16/grid-overlap-2-a-2160_x_3838.jpg,
+					images/9:16/grid-overlap-2-a-2880_x_5118.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/9:16/grid-overlap-2-a-800_x_1421.jpg,
+      		images/9:16/grid-overlap-2-a-640_x_1137.jpg,
+      		images/9:16/grid-overlap-2-a-480_x_853.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/9:16/grid-overlap-2-a-1600_x_2843.jpg,
+      		images/9:16/grid-overlap-2-a-1280_x_2274.jpg,
+      		images/9:16/grid-overlap-2-a-960_x_1706.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/9:16/grid-overlap-2-a-2400_x_4265.jpg,
+					images/9:16/grid-overlap-2-a-1920_x_3838.jpg,
+					images/9:16/grid-overlap-2-a-1440_x_2559.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/9:16/grid-overlap-2-a.jpg" alt="tall image of barber combing hair">
+				</picture>
+      </div>
+			<div class="the-shop-text" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="800">
+				<h3><span class="grid-the">THE</span><span class="grid-bold">SHOP</span></h3c>
+				<p>Welcome to SPARK Barbershop, where contemporary elegance meets a timeless atmosphere. Our shop, nestled in Ottawa, Canada, offers a cozy haven for grooming enthusiasts. With vintage touches and a friendly vibe, it’s more than just a place for haircuts, It’s a space
+					where you can relax, unwind, and leave looking and feeling your best.</p>
+				</div>
+			<!-- "Our Expertise" Section -->
+			<div class="image-stack-3-b squareImage" >
+				<picture>
+					<source srcset="
+					images/square/grid-overlap-3-b-320_x_320.jpg,
+					images/square/grid-overlap-3-b-480_x_480.jpg,
+					images/square/grid-overlap-3-b-720_x_720.jpg,
+					images/square/grid-overlap-3-b-960_x_960.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/square/grid-overlap-3-b-640_x_640.jpg,
+					images/square/grid-overlap-3-b-960_x_960.jpg
+					images/square/grid-overlap-3-b-1440_x_1440.jpg,
+					images/square/grid-overlap-3-b-1920_x_1920.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/square/grid-overlap-3-b-960_x_960.jpg,
+					images/square/grid-overlap-3-b-1440_x_1440.jpg,
+					images/square/grid-overlap-3-b-2160_x_2160.jpg,
+					images/square/grid-overlap-3-b-2880_x_2880.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/square/grid-overlap-3-b-800_x_800.jpg,
+      		images/square/grid-overlap-3-b-640_x_640.jpg,
+      		images/square/grid-overlap-3-b-480_x_480.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/square/grid-overlap-3-b-1600_x_1600.jpg,
+      		images/square/grid-overlap-3-b-1280_x_1280.jpg,
+      		images/square/grid-overlap-3-b-960_x_960.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/square/grid-overlap-3-b-2400_x_2400.jpg,
+					images/square/grid-overlap-3-b-1920_x_1920.jpg,
+					images/square/grid-overlap-3-b-1440_x_1440.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/square/grid-overlap-3-b.jpg" alt="Square image of barber combing hair">
+				</picture>
+      </div>
+      <div class="image-stack-3-a">
+				<picture>
+					<source srcset="
+					images/9:16/grid-overlap-3-a-320_x_569.jpg,
+					images/9:16/grid-overlap-3-a-480_x_854.jpg,
+					images/9:16/grid-overlap-3-a-720_x_1280.jpg,
+					images/9:16/grid-overlap-3-a-960_x_1706.jpg x1" 
+					media="(max-width: 320px)">
+					<source srcset="
+					images/9:16/grid-overlap-3-a-640_x_1138.jpg,
+					images/9:16/grid-overlap-3-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-3-a-1440_x_2560.jpg,
+					images/9:16/grid-overlap-3-a-1920_x_3413.jpg x2" 
+					media="(max-width: 640px)">
+					<source srcset="
+					images/9:16/grid-overlap-3-a-960_x_1706.jpg,
+					images/9:16/grid-overlap-3-a-1440_x_2560.jpg,
+					images/9:16/grid-overlap-3-a-2160_x_3840.jpg,
+					images/9:16/grid-overlap-3-a-2880_x_5120.jpg x3" 
+					media="(max-width: 959px)">
+					<source srcset="
+					images/9:16/grid-overlap-3-a-800_x_1422.jpg,
+      		images/9:16/grid-overlap-3-a-640_x_1138.jpg,
+      		images/9:16/grid-overlap-3-a-480_x_854.jpg x1" 
+      		media="(min-width: 960px)"> 
+      		<source srcset="
+      		images/9:16/grid-overlap-3-a-1600_x_2844.jpg,
+      		images/9:16/grid-overlap-3-a-1280_x_2275.jpg,
+      		images/9:16/grid-overlap-3-a-960_x_960.jpg x2" 
+      		media="(min-width: 1280px)">
+      		<source srcset="
+					images/9:16/grid-overlap-3-a-2400_x_4266.jpg,
+					images/9:16/grid-overlap-3-a-1920_x_3413.jpg,
+					images/9:16/grid-overlap-3-a-1440_x_2560.jpg x3" 
+      		media="(min-width: 1600px)">
+				<img src="images/9:16/grid-overlap-3-a.jpg" alt="tall image of barber combing hair">
+				</picture>
+      </div>
+			<div class="our-expertise-text" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="800">
+				<h3><span class="grid-the">OUR</span><span class="grid-bold">EXPERTISE</span><h3>
+				<p>At SPARK Barbershop, our expertise shines through in every cut. From classic to cutting-edge,
+					our experienced barbers tailor styles to match your vision. With a keen eye for detail and a
+					passion for the craft, we create exceptional looks that leave a lasting impression.
+					Your satisfaction is our priority, and our dedication to excellence sets us apart.</p>
+				</div>		
+			</div> <!--closes Grid-->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--script from Michalsnik - aos in order to fade in items as page scrolls down-->
+		<script>
+			AOS.init();
+		</script> <!--scripts end-->
+	</main>
+	<footer class="container">
+		<div class="footer-tpc">
+			<small>&copy; Nicolas Ortiz 2023</small>
+			<small><a href="#">Terms</a></small>
+			<small><a href="#">Privacy</a></small>
+			<small><a href="#">Cookies</a></small>
+		</div>
+	</footer> <!--closes footer-->
+</body>
+</html>
+
+<!-- Validator scans for "Bad value attribute" on image optimizations" -->

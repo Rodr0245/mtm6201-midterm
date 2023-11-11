@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/8097ac3239.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/services.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<script src="javascript/script.js"></script>
+		<title>SPARK Barbershop - Contact</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+<body>
+  <header role="banner">
+    <nav class="navbar" role="navigation">
+      <a href="index.html" class="spark-logo-nav">SPARK</a>
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" role="menuitem">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link" role="menuitem">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link fa-fade" role="menuitem">CONTACT</a>
+        </li>
+      </ul>
+      <div class="hamburger" role="button" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+	<main>
+		<div class="container form-container">
+			<h1><span class="contact-bold">CONTACT</span><span class="contact-light">US</span></h1>
+			<div class="form-image-container">
+				<div class="form-image">
+					<picture>
+						<source srcset="
+						images/9:16/grid-overlap-3-a-320_x_569.jpg,
+						images/9:16/grid-overlap-3-a-480_x_854.jpg,
+						images/9:16/grid-overlap-3-a-720_x_1280.jpg,
+						images/9:16/grid-overlap-3-a-960_x_1706.jpg x1" 
+						media="(max-width: 320px)">
+						<source srcset="
+						images/9:16/grid-overlap-3-a-640_x_1138.jpg,
+						images/9:16/grid-overlap-3-a-960_x_1706.jpg,
+						images/9:16/grid-overlap-3-a-1440_x_2560.jpg,
+						images/9:16/grid-overlap-3-a-1920_x_3413.jpg x2" 
+						media="(max-width: 640px)">
+						<source srcset="
+						images/9:16/grid-overlap-3-a-960_x_1706.jpg,
+						images/9:16/grid-overlap-3-a-1440_x_2560.jpg,
+						images/9:16/grid-overlap-3-a-2160_x_3840.jpg,
+						images/9:16/grid-overlap-3-a-2880_x_5120.jpg x3" 
+						media="(max-width: 959px)">
+						<source srcset="
+						images/9:16/grid-overlap-3-a-800_x_1422.jpg,
+						images/9:16/grid-overlap-3-a-640_x_1138.jpg,
+						images/9:16/grid-overlap-3-a-480_x_854.jpg x1" 
+						media="(min-width: 960px)"> 
+						<source srcset="
+						images/9:16/grid-overlap-3-a-1600_x_2844.jpg,
+						images/9:16/grid-overlap-3-a-1280_x_2275.jpg,
+						images/9:16/grid-overlap-3-a-960_x_960.jpg x2" 
+						media="(min-width: 1280px)">
+						<source srcset="
+						images/9:16/grid-overlap-3-a-2400_x_4266.jpg,
+						images/9:16/grid-overlap-3-a-1920_x_3413.jpg,
+						images/9:16/grid-overlap-3-a-1440_x_2560.jpg x3" 
+						media="(min-width: 1600px)">
+					<img src="images/9:16/grid-overlap-3-a.jpg" alt="tall image of barber combing hair">
+					</picture> <!--closes image optimization-->
+				</div>
+				<form> <!--starts contact form-->
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required placeholder="First Name">
+			
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+			
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required placeholder="Email">
+			
+					<label for="phoneNumber">Phone Number:</label>
+					<input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Phone Number">
+			
+					<div class="message-box">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+					</div>
+			
+					<button type="submit">Submit</button>
+				</form> <!--ends contact form-->
+			</div><!--ends contact container-->
+		</div>
+	</main>
+	<footer class="container">
+		<div class="footer-tpc">
+			<small>&copy; Nicolas Ortiz 2023</small>
+			<small><a href="#">Terms</a></small>
+			<small><a href="#">Privacy</a></small>
+			<small><a href="#">Cookies</a></small>
+		</div>
+	</footer><!--ends footer-->
+</body>
+</html>

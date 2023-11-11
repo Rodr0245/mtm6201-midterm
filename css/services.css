@@ -1,0 +1,125 @@
+.spark-logo-nav{
+	color: #333333;
+}
+.bar{
+	background-color: #333333; /* changes hamburger menu color */
+}
+.services {
+	margin-top: 5rem;
+	text-align: center;
+}
+.services-bold{
+	font-weight: bold;
+	letter-spacing: -.1rem;
+	padding-left: .5rem;
+}
+.services-our{
+	padding-left: .5rem; /* necessary since I'm suing a tight font */
+}
+.services-our, .services-bold{
+	font-size: 2rem;
+}
+.line-comb::before,
+.line-comb::after {
+	width: 40%; /* Sets the width of the lines */
+}
+.service-card img{
+	width: 30%;
+	padding-bottom: 1rem;
+}
+.service-card h2{
+	font-size: 1rem;
+}
+.service-bold{
+	font-weight: bold;
+}
+.service-light{
+	padding-left:	.5rem ;
+}
+.service-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem;
+	transition: transform 0.2s ease-in-out; /* to smooth animation */
+}
+.shaves{
+	margin-top: 5rem;
+}
+.service-card-text h2{
+	margin: 0;
+}
+.trims img{
+	padding-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+.styling img{
+	width: 25%;
+	margin-top: 1rem;
+}
+.services-container{
+	display: block;
+}
+footer{
+	margin-top: 10rem; /* to give my footer some space */
+}
+
+
+@media screen and (min-width: 576px) {
+  /* Styles for screens with a minimum width of 576 pixels */
+	.services-container{
+		margin-top: 5rem;
+	}
+	.services p {
+		padding-top: 2rem;
+	}
+	.service-card:hover{
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		transform: translateY(-5px);
+	}
+}
+@media screen and (min-width: 768px) {
+  /* Styles for screens with a minimum width of 768 pixels */
+	.services-container{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		margin-top: 8rem;
+	}
+	.shaves{
+		margin: 0;
+	}
+	.trims img{
+		padding: 0;
+		width: 30%;
+		margin-bottom: 3rem;
+	}
+	.styling img{
+		margin-bottom: 1rem;
+	}
+
+}
+@media screen and (min-width: 1300px) {
+  /* Styles for screens with a minimum width of 1300 pixels */
+	.nav-link{
+		color: #333333;
+	}
+	.nav-link::before{
+		background-color: black;
+	}
+	.trims img{
+		padding: 0;
+		width: 30%;
+		margin-bottom: 4rem;
+	}
+	.styling img{
+		margin-bottom: 1rem;
+	}
+	.services-container{
+		margin-top: 10rem;
+	}
+
+
+}
+
