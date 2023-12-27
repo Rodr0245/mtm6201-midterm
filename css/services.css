@@ -23,12 +23,24 @@
 .line-comb::after {
 	width: 40%; /* Sets the width of the lines */
 }
-.service-card img{
+.service-card img {
 	width: 30%;
-	padding-bottom: 1rem;
+	max-width: 150px;
 }
+	.service-card img {
+		width: 100%;
+		height: auto;
+}
+
 .service-card h2{
 	font-size: 1rem;
+	
+}
+.service-card-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
 }
 .service-bold{
 	font-weight: bold;
@@ -40,27 +52,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	text-align: center;
+	justify-content: center;
 	padding: 1rem;
-	transition: transform 0.2s ease-in-out; /* to smooth animation */
-}
-.shaves{
-	margin-top: 5rem;
-}
-.service-card-text h2{
-	margin: 0;
-}
-.trims img{
-	padding-bottom: 1.5rem;
-	margin-top: 1rem;
-}
-.styling img{
-	width: 25%;
-	margin-top: 1rem;
-}
-.services-container{
-	display: block;
+	transition: transform 0.4s ease-in-out; /* to smooth animation */
+	height: 500px;
 }
 footer{
 	margin-top: 10rem; /* to give my footer some space */
@@ -69,12 +65,7 @@ footer{
 
 @media screen and (min-width: 576px) {
   /* Styles for screens with a minimum width of 576 pixels */
-	.services-container{
-		margin-top: 5rem;
-	}
-	.services p {
-		padding-top: 2rem;
-	}
+
 	.service-card:hover{
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 		transform: translateY(-5px);
@@ -83,25 +74,34 @@ footer{
 @media screen and (min-width: 768px) {
   /* Styles for screens with a minimum width of 768 pixels */
 	.services-container{
+		margin-top: 5rem;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		margin-top: 8rem;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
 	}
-	.shaves{
-		margin: 0;
+	.testy{
+		display: flex;
+		justify-content: center;
 	}
-	.trims img{
-		padding: 0;
-		width: 30%;
-		margin-bottom: 3rem;
+	.service-card {
+		width: 300px;
+		justify-content: start;
+		height: 400px;
 	}
-	.styling img{
-		margin-bottom: 1rem;
+	.service-card img {
+		width: 50%;
+		height: auto;
 	}
 
 }
 @media screen and (min-width: 1300px) {
   /* Styles for screens with a minimum width of 1300 pixels */
+	.services-container {
+		display: flex;
+		flex: 1;
+		justify-content: space-evenly;
+		margin-top: 10rem;
+	}
 	.nav-link{
 		color: #333333;
 	}
@@ -115,9 +115,6 @@ footer{
 	}
 	.styling img{
 		margin-bottom: 1rem;
-	}
-	.services-container{
-		margin-top: 10rem;
 	}
 
 
